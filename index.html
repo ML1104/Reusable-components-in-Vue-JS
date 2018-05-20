@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="navigation">
+        <div id="logo">MyStore</div>
+        <ul id="navitems">
+            <a href="">Food</a>
+            <a href="">Drinks</a>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <h1 id="food">FOOD</h1>
+        <h1 id="drinks">DRINKS</h1>
+    </div>
+
+    <div id="app" class="food container">
+        <div class="card">
+            <img class="imageplace" :src="food1.imageUrl">
+            <div class="info">
+                <card class="ul">
+                    <li>{{ food1.name }}</li>
+                    <li>{{ food1.price }}&dollar;</li>
+                </card>
+            </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="food2.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ food2.name }}</li>
+                        <li>{{ food2.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="food3.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ food3.name }}</li>
+                        <li>{{ food3.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="food4.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ food4.name }}</li>
+                        <li>{{ food4.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="food5.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ food5.name }}</li>
+                        <li>{{ food5.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+            <img class="imageplace" :src="food6.imageUrl">
+            <div class="info">
+                <card class="ul">
+                    <li>{{ food6.name }}</li>
+                    <li>{{ food6.price }}&dollar;</li>
+                </card>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks Section -->
+
+    <div id="app2" class="drinks container">
+        <div class="card">
+            <img class="imageplace" :src="drink1.imageUrl">
+            <div class="info">
+                <card class="ul">
+                    <li>{{ drink1.name }}</li>
+                    <li>{{ drink1.price }}&dollar;</li>
+                </card>
+            </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="drink2.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ drink2.name }}</li>
+                        <li>{{ drink2.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="drink3.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ drink3.name }}</li>
+                        <li>{{ drink3.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="drink4.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ drink4.name }}</li>
+                        <li>{{ drink4.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="imageplace" :src="drink5.imageUrl">
+                <div class="info">
+                    <card class="ul">
+                        <li>{{ drink5.name }}</li>
+                        <li>{{ drink5.price }}&dollar;</li>
+                    </card>
+                </div>
+        </div>
+
+        <div class="card">
+            <img class="imageplace" :src="drink6.imageUrl">
+            <div class="info">
+                <card class="ul">
+                    <li>{{ drink6.name }}</li>
+                    <li>{{ drink6.price }}&dollar;</li>
+                </card>
+            </div>
+    </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue ({
+            el: '#app',
+            data: {
+                food1: {name: "Dem Fries", price: 5, imageUrl: "https://recipes.timesofindia.com/photo/54659021.cms"},
+                food2: {name: "Dat Burger", price: 10, imageUrl: "https://www.chewboom.com/wp-content/uploads/2017/02/Carl%E2%80%99s-Jr.-Serves-Up-The-Breakfast-Burger-All-Day-678x381.jpg"},
+                food3: {name: "TwistKebab", price: 15, imageUrl: "https://static.chefkoch-cdn.de/ck.de/rezepte/302/302125/874308-960x720-kartoffel-twister-spiralen-tornados.jpg"},
+                food4: {name: "El Sueño", price: 20, imageUrl: "http://thumbs.xdesktopwallpapers.com/wp-content/uploads/2011/01/Steamy-Hot-Dish-720x405.jpg"},
+                food5: {name: "El Diablo", price: 25, imageUrl: "https://cdn.gobankingrates.com/wp-content/uploads/2017/01/0-Main-HotSpicy-rez-art-iStock-521875613-848x477.jpg"},
+                food6: {name: "El Plate", price: 100, imageUrl: "https://purepng.com/public/uploads/large/91509209375fvfnxhki8xzjhj3uu5mttdp3ol0lh6gbmpxu2jiidhm9qqzfwisee2b3wltz8nbnpr6ooeci1iv7ubpox0dvajr7neywkxs5yyyn.png"}
+            }
+        })
+
+        var app2 = new Vue ({
+            el: '#app2',
+            data: {
+                drink1: {name: "Dat Pepsi", price: 5, imageUrl: "https://www.motherjones.com/wp-content/uploads/pepsi-master.png?w=990"},
+                drink2: {name: "Dr Pepper", price: 10, imageUrl: "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F.%2Fwas-there-a-real-dr-pepper-fwx.jpg%3Fitok%3DZSp5KWWN&w=700&q=85"},
+                drink3: {name: "Juice", price: 15, imageUrl: "http://images.media-allrecipes.com/userphotos/960x960/3758394.jpg"},
+                drink4: {name: "El Froggo", price: 20, imageUrl: "https://i.imgur.com/9p1Gvlh.jpg"},
+                drink5: {name: "El Chai", price: 25, imageUrl: "https://www.ndtv.com/cooks/images/teaandcitrus.jpg"},
+                drink6: {name: "El Water", price: 100, imageUrl: "https://www.water.org.uk/sites/default/files/styles/large/public/images/11138455_m.jpg?itok=vb4Jrz3x"}
+
+
+            }
+        })
+
+        Vue.component('card', {
+            template: '<ul></ul>'
+        })
+    </script>
+
+    <script>
+        
+    </script>
+</body>
+</html>
