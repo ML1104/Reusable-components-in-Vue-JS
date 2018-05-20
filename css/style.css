@@ -87,7 +87,7 @@ ul a:hover {
     height: 150px;
 }
 
-.info .ul {
+.info ul {
     list-style-type: none;
     width: 100%;
     display: flex;

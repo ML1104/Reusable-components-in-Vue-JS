@@ -24,60 +24,60 @@
         <div class="card">
             <img class="imageplace" :src="food1.imageUrl">
             <div class="info">
-                <card class="ul">
+                <ul class="ul">
                     <li>{{ food1.name }}</li>
                     <li>{{ food1.price }}&dollar;</li>
-                </card>
+                </ul>
             </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="food2.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ food2.name }}</li>
                         <li>{{ food2.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="food3.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ food3.name }}</li>
                         <li>{{ food3.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="food4.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ food4.name }}</li>
                         <li>{{ food4.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="food5.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ food5.name }}</li>
                         <li>{{ food5.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
             <img class="imageplace" :src="food6.imageUrl">
             <div class="info">
-                <card class="ul">
+                <ul class="ul">
                     <li>{{ food6.name }}</li>
                     <li>{{ food6.price }}&dollar;</li>
-                </card>
+                </ul>
             </div>
         </div>
     </div>
@@ -88,60 +88,60 @@
         <div class="card">
             <img class="imageplace" :src="drink1.imageUrl">
             <div class="info">
-                <card class="ul">
+                <ul class="ul">
                     <li>{{ drink1.name }}</li>
                     <li>{{ drink1.price }}&dollar;</li>
-                </card>
+                </ul>
             </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="drink2.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ drink2.name }}</li>
                         <li>{{ drink2.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="drink3.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ drink3.name }}</li>
                         <li>{{ drink3.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="drink4.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ drink4.name }}</li>
                         <li>{{ drink4.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
                 <img class="imageplace" :src="drink5.imageUrl">
                 <div class="info">
-                    <card class="ul">
+                    <ul class="ul">
                         <li>{{ drink5.name }}</li>
                         <li>{{ drink5.price }}&dollar;</li>
-                    </card>
+                    </ul>
                 </div>
         </div>
 
         <div class="card">
             <img class="imageplace" :src="drink6.imageUrl">
             <div class="info">
-                <card class="ul">
+                <ul class="ul">
                     <li>{{ drink6.name }}</li>
-                    <li>{{ drink6.price }}&dollar;</li>
-                </card>
+                    <li>{{ drink6.price }}</li>
+                </ul>
             </div>
     </div>
     </div>
@@ -149,6 +149,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
+
         var app = new Vue ({
             el: '#app',
             data: {
@@ -170,13 +171,7 @@
                 drink4: {name: "El Froggo", price: 20, imageUrl: "https://i.imgur.com/9p1Gvlh.jpg"},
                 drink5: {name: "El Chai", price: 25, imageUrl: "https://www.ndtv.com/cooks/images/teaandcitrus.jpg"},
                 drink6: {name: "El Water", price: 100, imageUrl: "https://www.water.org.uk/sites/default/files/styles/large/public/images/11138455_m.jpg?itok=vb4Jrz3x"}
-
-
             }
-        })
-
-        Vue.component('card', {
-            template: '<ul></ul>'
         })
     </script>
 
